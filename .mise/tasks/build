@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Build the game (pass --release for an optimized build)"
+set -euo pipefail
+# Extra arguments go to Cargo, e.g. `mise run build --release`.
+cargo build --locked "$@"

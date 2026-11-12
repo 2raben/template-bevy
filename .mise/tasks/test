@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#MISE description="Run the headless test suite (pass a name to filter)"
+set -euo pipefail
+# Extra arguments go to Cargo, e.g. `mise run test jump`.
+cargo test --locked "$@"

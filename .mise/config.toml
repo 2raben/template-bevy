@@ -1,0 +1,10 @@
+# Project tool versions and settings for mise (https://mise.jdx.dev).
+# File tasks live in .mise/tasks/; list them with `mise tasks`.
+
+[tools]
+# Matches `rust-version` in Cargo.toml; Bevy 0.20 requires rustc 1.97.1.
+rust = { version = "1.97.1", components = "rustfmt,clippy" }
+
+[env]
+# Show Rust backtraces when the game or a test panics.
+RUST_BACKTRACE = "1"
